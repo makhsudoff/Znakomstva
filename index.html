@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
 
-  <!-- STYLES -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
-  <script src="js/main.js"></script>
-</body>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- SITE-HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <a class="site-header__logo" href="#">
+          <img
+            class="site-header__logo-img"
+            src="img/logo.svg"
+            alt="logo"
+            width="262"
+            height="60"
+          />
+        </a>
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Анкеты</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Сообщения</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Подписка</a>
+            </li>
+          </ul>
+        </nav>
+        <form>
+          <select class="site-header__select" name="select" id="select">
+            <option value="Россия">Россия</option>
+            <option value="Узбекистан">Узбекистан</option>
+            <option value="Америка">Америка</option>
+            <option value="Англия">Англия</option>
+          </select>
+        </form>
+        <div class="site-header__icons-wrapper">
+          <a class="site-header__search-icon" href="#">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+            >
+              <g clip-path="url(#a)">
+                <path
+                  fill="#925FA4"
+                  d="m19.361 18.217-4.76-4.95a8.05 8.05 0 0 0 1.895-5.192C16.496 3.623 12.873 0 8.42 0 3.968 0 .346 3.623.346 8.075c0 4.453 3.622 8.075 8.075 8.075a7.99 7.99 0 0 0 4.626-1.461l4.796 4.988c.2.208.47.323.76.323a1.054 1.054 0 0 0 .76-1.783ZM8.421 2.107a5.975 5.975 0 0 1 5.968 5.968 5.975 5.975 0 0 1-5.968 5.969 5.975 5.975 0 0 1-5.969-5.969 5.975 5.975 0 0 1 5.969-5.968Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h20v20H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <img
+              class="site-header__notification-icon"
+              src="img/notification-icon.svg"
+              alt="Notification icon"
+              width="39"
+              height="26"
+            />
+          </a>
+        </div>
+
+        <!-- PROFILE CARD -->
+        <div class="profile__card">
+          <a class="profile-card__link" href="#">
+            <img
+              class="profile-card__img"
+              src="img/profile.svg"
+              alt=""
+              width="40"
+              height="40"
+            />
+          </a>
+          <h3 class="profile__card-heading">Иван Иванов</h3>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
